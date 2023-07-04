@@ -1,0 +1,38 @@
+<div class = "container">
+    <div class ="card">
+        <div class="card-header bg-dark text-light" >
+            <h2>Lista de Celular</h2>
+        </div>
+<table class="table table-active">
+    <thead>
+      <tr class="bg-primary">
+        <th scope="col" class="bg-dark text-light">#</th>
+        <th scope="col" class="bg-dark text-light">Marca</th>
+        <th scope="col" class="bg-dark text-light">Modelo</th>
+        <th scope="col" class="bg-dark text-light">Color</th>
+        <th scope="col" class="bg-dark text-light">Precio</th>
+        <th scope="col" class="bg-dark text-light">Capacidad</th>
+
+        <th scope="col" class="bg-dark text-light">Editar</th>
+        <th scope="col" class="bg-dark text-light">Eliminar</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of celular" class="bg-primary">
+            <td class="bg-dark text-light">{{c.idCelular}}</td>
+            <td class="bg-dark text-light">{{c.marca}}</td>
+            <td class="bg-dark text-light">{{c.modelo}}</td>
+            <td class="bg-dark text-light">{{c.color}}</td>
+            <td class="bg-dark text-light">{{c.precio}}</td>
+            <td class="bg-dark text-light">{{c.capacidad}}</td>
+
+            <td class="bg-dark text-light"><button type="button" class="btn btn-outline-success" (click)="editar(c)">Editar</button></td>
+            <td class="bg-dark text-light"><button type="button" class="btn btn-outline-danger" (click)="eliminar(c)">Eliminar</button></td>
+
+        </tr>
+    </tbody>
+
+  </table>
+
+</div>
+</div>

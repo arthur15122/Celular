@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="card text-center bg-info text-white" style="width: 18rem;">
+        <div class="card-header">
+            <h2>Formulario de Celular</h2>
+        </div>
+        <!--inicia formuarios-->
+        <div class="card-body">
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="idCelular">#</label>
+                    <input type="number" class="form-control" name="idCelular" placeholder="ID" [(ngModel)]="celular.idCelular">
+                  </div>
+                  <br>
+
+                  <div class="form-group col-md-6">
+                    <label for="marca">Marca</label>
+                    <input type="text" class="form-control" name="marca" placeholder="Marca" [(ngModel)]="celular.marca">
+                  </div>
+                </div>
+                <br>
+
+                <div class="form-group col-md-6">
+                  <label for="modelo">Modelo</label>
+                  <input type="text" class="form-control" name="modelo" placeholder="modelo" [(ngModel)]="celular.modelo">
+                </div>
+                <br>
+
+                <div class="form-group col-md-6">
+                  <label for="modelo">Color</label>
+                  <input type="text" class="form-control" name="color" placeholder="color" [(ngModel)]="celular.color">
+                </div>
+                <br>
+
+                <div class="form-group col-md-6">
+                    <label for="precio">Precio</label>
+                    <input type="number" class="form-control" name="precio" placeholder="precio" [(ngModel)]="celular.precio">
+                  </div>
+                  <br>
+
+                  <div class="form-group col-md-6">
+                    <label for="capacidad">Capacidad</label>
+                    <input type="number" class="form-control" name="capacidad" placeholder="capacidad" [(ngModel)]="celular.capacidad">
+                  </div>
+                  <br>
+                <button type="submit" class="btn btn-outline-primary" (click)="guardar()">Guardar</button>
+              </form>
+        </div>
+     <!--finaliza formuarios-->
+
+    </div>
+</div>
